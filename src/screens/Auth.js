@@ -1,8 +1,14 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import { View, Text } from 'react-native'
 import sharedStyles from '../styles'
+import {login} from '../actions'
 
 class Auth extends Component {
+  componentDidMount() {
+    this.props.login()
+  }
+
   render() {
     return (
       <View style={sharedStyles.container}>
@@ -14,4 +20,4 @@ class Auth extends Component {
   }
 }
 
-export default Auth
+export default connect(null, {login})(Auth)

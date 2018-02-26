@@ -94,8 +94,13 @@ PODS:
   - GPUImage (0.1.7)
   - JKBigInteger2 (0.0.5)
   - lottie-ios (2.1.5)
+  - React (0.52.0):
+    - React/Core (= 0.52.0)
   - React/ART (0.52.0):
     - React/Core
+  - React/BatchedBridge (0.52.0):
+    - React/Core
+    - React/cxxreact_legacy
   - React/Core (0.52.0):
     - yoga (= 0.52.0.React)
   - React/CxxBridge (0.52.0):
@@ -107,6 +112,9 @@ PODS:
     - Folly (= 2016.09.26.00)
     - React/jschelpers
     - React/jsinspector
+  - React/cxxreact_legacy (0.52.0):
+    - React/jschelpers_legacy
+    - React/jsinspector_legacy
   - React/DevSupport (0.52.0):
     - React/Core
     - React/RCTWebSocket
@@ -114,7 +122,9 @@ PODS:
   - React/jschelpers (0.52.0):
     - Folly (= 2016.09.26.00)
     - React/PrivateDatabase
+  - React/jschelpers_legacy (0.52.0)
   - React/jsinspector (0.52.0)
+  - React/jsinspector_legacy (0.52.0)
   - React/PrivateDatabase (0.52.0)
   - React/RCTActionSheet (0.52.0):
     - React/Core
@@ -140,6 +150,8 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
+  - RNVectorIcons (4.4.2):
+    - React
   - yoga (0.52.0.React)
 
 DEPENDENCIES:
@@ -149,6 +161,7 @@ DEPENDENCIES:
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - GLog (from `../node_modules/react-native/third-party-podspecs/GLog.podspec`)
   - React/ART (from `../node_modules/react-native`)
+  - React/BatchedBridge (from `../node_modules/react-native`)
   - React/Core (from `../node_modules/react-native`)
   - React/CxxBridge (from `../node_modules/react-native`)
   - React/DevSupport (from `../node_modules/react-native`)
@@ -161,6 +174,7 @@ DEPENDENCIES:
   - React/RCTText (from `../node_modules/react-native`)
   - React/RCTVibration (from `../node_modules/react-native`)
   - React/RCTWebSocket (from `../node_modules/react-native`)
+  - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 EXTERNAL SOURCES:
@@ -175,6 +189,8 @@ EXTERNAL SOURCES:
     :podspec: ../node_modules/react-native/third-party-podspecs/GLog.podspec
   React:
     :path: ../node_modules/react-native
+  RNVectorIcons:
+    :path: ../node_modules/react-native-vector-icons
   yoga:
     :path: ../node_modules/react-native/ReactCommon/yoga
 
@@ -213,8 +229,9 @@ SPEC CHECKSUMS:
   JKBigInteger2: e91672035c42328c48b7dd015b66812ddf40ca9b
   lottie-ios: 836cdbba92f62f3c6a00e37a4ce485321fe317cf
   React: 43e97926f429d846050880666de1809e22dd5cc5
+  RNVectorIcons: c0dbfbf6068fefa240c37b0f71bd03b45dddac44
   yoga: 55da126afc384965b96bff46652464373b330add
 
-PODFILE CHECKSUM: ecff0736a8588a8e32b112dab50a860cf2ab115f
+PODFILE CHECKSUM: f9bdf66d1cf019cd9d96427ade17aefd99dc3a40
 
 COCOAPODS: 1.4.0

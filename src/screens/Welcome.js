@@ -1,11 +1,18 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import { StyleSheet, View, Text, Image } from 'react-native'
 import { Button } from 'react-native-elements'
 import sharedStyles from '../styles'
+import { initSpotify, login } from '../actions'
 
 class Welcome extends Component {
+  componentDidMount() {
+    this.props.initSpotify()
+  }
+
   handleGetStarted = () => {
-    this.props.navigation.navigate('rooms')
+    this.props.login()
+    //this.props.navigation.navigate('auth')
   }
 
   render() {
@@ -45,4 +52,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default Welcome
+export default connect(null, { initSpotify, login })(Welcome)

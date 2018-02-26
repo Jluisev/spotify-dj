@@ -3,6 +3,7 @@
     "name": "spotify-dj",
     "description": "This project is really great.",
     "slug": "spotify-dj",
+    "scheme": "spotifydj",
     "privacy": "public",
     "sdkVersion": "25.0.0",
     "platforms": [
